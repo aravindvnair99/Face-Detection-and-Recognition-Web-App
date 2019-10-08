@@ -1,2 +1,2 @@
-# Face-API-Web-App
+# Face Detection and Recognition Web App
 A web app implementing face-api.js (JavaScript API for face detection and face recognition in the browser and nodejs with tensorflow.js)
