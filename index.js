@@ -1,13 +1,12 @@
 const express = require('express'),
 	app = express(),
-	path = __dirname + '/views/';
+	path = __dirname + '/views/',
+	ifaces = require('os').networkInterfaces();
 
 app.set('port', process.env.PORT || 5000);
 app.use(express.static(__dirname + '/public'));
 app.set('views', path);
 app.set('view engine', 'ejs');
-var os = require('os');
-var ifaces = os.networkInterfaces();
 
 Object.keys(ifaces).forEach(function(ifname) {
 	var alias = 0;
